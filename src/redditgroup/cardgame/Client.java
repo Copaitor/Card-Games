@@ -17,6 +17,7 @@ public class Client extends JFrame implements ActionListener{
 	JPanel lab;
 	JPanel hl;
 	JPanel tex;
+	JPanel nid;
 	public Client(String title){
 		super(title);
 		setBackground(new Color(0, 100, 0));
@@ -28,6 +29,7 @@ public class Client extends JFrame implements ActionListener{
 		lab = new JPanel();
 		hl = new JPanel();
 		tex = new JPanel();
+		nid = new JPanel();
 		
 		JLabel label = new JLabel("Which table would you like to play?");
 		lab.add(label);
@@ -39,16 +41,20 @@ public class Client extends JFrame implements ActionListener{
 		hl.add(highlow);
 		JButton texas = new JButton("Texas Holdem");
 		tex.add(texas);
+		JButton nidorano = new JButton("Nidorano");
+		nid.add(nidorano);
 		add(lab);
 		add(bj);
 		add(p);
 		add(tex);
 		add(hl);
+		add(nid);
 		
 		blackjack.addActionListener(this);
 		poker.addActionListener(this);
 		highlow.addActionListener(this);
 		texas.addActionListener(this);
+		nidorano.addActionListener(this);
 		texas.setActionCommand("texas");
 		
 		setLocationRelativeTo(null);
@@ -78,6 +84,10 @@ public class Client extends JFrame implements ActionListener{
 			VisualHL.main(null);
 			setVisible(false);
 			
+		}
+		else if(event.equals("Nidorano")){
+			VisualNid(null);
+			setVisible(false);
 		}
 		
 	}
