@@ -1,0 +1,36 @@
+package redditgroup.cardgame;
+///////////////////////////////////
+//Michael Melchione
+//AP Computer Science A
+//1-6-12
+//Card Games Program
+///////////////////////////////////
+
+
+public class NOHand extends Hand
+{
+	public NOHand()
+	{
+		super(2);
+	}
+	
+	public int NOValue()
+	{
+		int i, value = 0;
+		Card temp;
+		int cardVal;
+		int nidohonor;
+		
+		
+		for(i = 0; i < getSize(); i++)
+		{
+			temp = getCard(i);
+			nidohonor = temp.getCardNumber();
+			nidocolor = temp.getSuitString();
+			if (nidohonor == 4 && card)
+			
+		}
+		
+		
+	}
+}
