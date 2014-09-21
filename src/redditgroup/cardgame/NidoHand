@@ -1,8 +1,6 @@
 package redditgroup.cardgame;
 ///////////////////////////////////
-//Michael Melchione
-//AP Computer Science A
-//1-6-12
+//apc
 //Card Games Program
 ///////////////////////////////////
 
@@ -27,8 +25,96 @@ public class NOHand extends Hand
 			temp = getCard(i);
 			nidohonor = temp.getCardNumber();
 			nidocolor = temp.getSuitString();
-			if (nidohonor == 4 && card)
-			
+			if (nidohonor == 4 && nidocolor != "Hearts")
+			{
+				cardVal = 1;
+			}
+			else if (nidohonor == 5 && nidocolor != "Hearts")
+			{
+				cardVal = 2;
+			}
+			else if (nidohonor == 4 && nidocolor == "Hearts")
+			{
+				cardVal = 2;
+			}
+			else if (nidohonor == 6 && nidocolor != "Hearts")
+				cardVal = 3;
+			}
+			else if (nidohonor == 5 && nidocolor == "Hearts")
+				cardVal = 3;
+			}
+			else if (nidohonor == 8 && nidocolor != "Hearts")
+				cardVal = 4;
+			}
+			else if (nidohonor == 6 && nidocolor == "Hearts")
+				cardVal = 4;
+			}
+			else if (nidohonor == 9 && nidocolor != "Hearts")
+				cardVal = 5;
+			}
+			else if (nidohonor == 8 && nidocolor == "Hearts")
+				cardVal = 5;
+			}
+			else if (nidohonor == 7 && nidocolor != "Hearts")
+				cardVal = 6;
+			}
+			else if (nidohonor == 9 && nidocolor == "Hearts")
+				cardVal = 6;
+			}
+			else if (nidohonor == 10 && nidocolor != "Hearts")
+				cardVal = 7;
+			}
+			else if (nidohonor == 11 && nidocolor != "Hearts")
+				cardVal = 8;
+			}
+			else if (nidohonor == 11 && nidocolor == "Hearts")
+				cardVal = 9;
+			}
+			else if (nidohonor == 10 && nidocolor == "Hearts")
+				cardVal = 8;
+			}
+			else if (nidohonor == 12 && nidocolor != "Hearts")
+				cardVal = 10;
+			}
+			else if (nidohonor == 12 && nidocolor == "Hearts")
+				cardVal = 11;
+			}
+			else if (nidohonor == 13 && nidocolor != "Hearts")
+				cardVal = 11;
+			}
+			else if (nidohonor == 13 && nidocolor == "Hearts")
+				cardVal = 12;
+			}
+			else if (nidohonor == 2 && nidocolor != "Hearts")
+				cardVal = 12;
+			}
+			else if (nidohonor == 2 && nidocolor == "Hearts")
+				cardVal = 13;
+			}
+			else if (nidohonor == 3 && nidocolor != "Hearts")
+				cardVal = 13;
+			}
+			else if (nidohonor == 3 && nidocolor == "Hearts")
+				cardVal = 14;
+			}
+			else if (nidohonor == 13 && nidocolor != "Hearts")
+				cardVal = 14;
+			}
+			else if (nidohonor == 7 && nidocolor == "Hearts")
+				cardVal = 14;
+			}
+			else if (nidohonor == 14 && nidocolor != "Hearts" && nidocolor != "Spades")
+				cardVal = 15;
+			}
+			else if (nidohonor == 13 && nidocolor == "Hearts")
+				cardVal = 15;
+			}
+			else if (nidohonor == 14 && nidocolor == "Hearts")
+				cardVal = 16;
+			}
+			else if (nidohonor == 14 && nidocolor == "Spades")
+				cardVal = 16;
+			}
 		}
 		
 		
