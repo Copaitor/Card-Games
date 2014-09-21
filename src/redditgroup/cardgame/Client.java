@@ -86,7 +86,7 @@ public class Client extends JFrame implements ActionListener{
 			
 		}
 		else if(event.equals("Nidorano")){
-			VisualNid(null);
+			VisualNid.main(null);
 			setVisible(false);
 		}
 		
